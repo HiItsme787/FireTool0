@@ -6,7 +6,7 @@ sleep 3
 figlet al.taqlbe
 echo "this tool made by insta@al.taqlbe "
 echo "if you want onter options press enter"
-read -p "Enter URL To Scan >>> " Target
+read -p "Enter URL To Scan > " Target
 nmap $Target
 
 
@@ -21,8 +21,13 @@ figlet al.taqlbe
 echo "this tool made by insta @ al.taqlbe "
 echo "if you want onter options press enter"
 read -p "Enter md5 hash >>>" hash
-read -p "enter password list >>> " pass
+read -p "enter password list > " pass
 echo "password has been cracked  (:"
 
 hashcat -m 0 -a 0 $hash $pass 
-
+figlet al.taqlbe
+echo "this tool made by insta @ al.taqlbe"
+echo "you must install subfinder tool"
+echo "sudo apt-get install subfinder"
+read -p "subdomain findder >" sub
+subfinder -d $sub
